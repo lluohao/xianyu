@@ -1,0 +1,66 @@
+		html,body{
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			background-color:white;
+			font-family: "楷体";
+		}
+		#headBtn{
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+		}
+		#headBtn a{
+			display: inline-block;
+			width: 20%;
+			color: white;
+			font-size: 0.8em;
+			text-align: center;
+			text-decoration: none;
+		}
+	
+		.mui-title a{
+			display: inline-block;
+			width: 20%;
+			color: #929292;
+			text-align: center;
+			text-decoration: none;
+		}
+		#main{
+			width: 100%;
+			margin-top: 50px;
+			border-top: 1px solid #007AFF;		
+			}
+		#main>div{
+			width: 100%;
+			height: 100px;
+			border: 1px solid #007AFF;
+			border-top: none;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		#main>div:hover{
+			background-color: #f9ffc1;
+		}
+		#main>div>div{
+			display: inline-block;
+		}
+		#main>div>div:first-child{
+			margin-left: 10px;
+			float: left;
+		}
+		#main>div>div:last-child{
+			float: left;
+			margin-left: 10px;
+		}
+		#main>div img{
+			width: 90px;
+			height: 90px;
+		}
+		#main>div p{
+			margin: 0;
+			width: 200px;
+		}
+		#main>div p:first-child{
+			font-weight: bold;
+		}

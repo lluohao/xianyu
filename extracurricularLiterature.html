@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
+		<script type="text/javascript" src="js/data.js" ></script>
+		<script type="text/javascript" src="js/mui.min.js" ></script>
+		<link rel="stylesheet" href="css/eachType.css" />
+		<title></title>
+
+	</head>
+	<style>
+		#headBtn a:nth-child(4){
+			font-weight: bold;
+		}
+	</style>
+	<script>
+		mui.plusReady(function() {
+    			plus.key.addEventListener('backbutton', function() {
+        			window.history.back();
+    			}, false);
+			});
+		$(document).ready(function(){
+			for(var i=0;i<data.length;i++){
+				if(data[i].type=="课外文学"){
+				var onceDiv=$('<div onclick="window.location.href=\'goods.html?name='+data[i].image+'\'"><div><img src="http://caochao.cc:8080/images/'+data[i].image+'"/></div><div><p>'+data[i].name+'</p><p>价格：&yen;'+data[i].price+'</p><p>简介：'+data[i].describe+'</p></div></div>');
+				onceDiv.appendTo('#main');
+				}
+			}
+		})
+		
+	</script>
+	<body>
+		<header class="mui-bar mui-bar-nav" style="padding-right: 15px;background-color: #007AFF;">
+		<div id="headBtn"><a href="electronic.html">电子产品</a><a href="teacherMaterials.html">二手教材</a><a href="cosmetic.html">化妆品</a><a href="extracurricularLiterature.html">课外文学</a><a href="other.html">其他</a></div>
+		</header>
+		<div id="main">
+			
+		</div>
+	</body>
+</html>
